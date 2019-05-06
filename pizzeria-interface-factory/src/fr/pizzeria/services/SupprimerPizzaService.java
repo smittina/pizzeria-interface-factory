@@ -4,13 +4,26 @@ import java.util.Scanner;
 
 import fr.pizzeria.dao.PizzaMemDao;
 
+/**
+ * Service permettant de supprimer une pizza 
+ * @author Formation
+ *
+ */
 public class SupprimerPizzaService extends MenuService {
 
-
+	/**
+	 * Constructeur
+	 * @param daoPizza Dao Pizza
+	 * @param scanner Scanner permettant à l'utilisateur d'indiquer ses choix
+	 * @param menu Autre menu pouvant intervenir
+	 */
 	public SupprimerPizzaService(PizzaMemDao daoPizza, Scanner scanner,  MenuService menu) {
 		super(daoPizza, scanner, menu);
 	}
 	
+	/**
+	 * Permet de supprimer une pizza de la liste des pizzas connues
+	 */
 	@Override
 	public void executeUC() {
 		// Déclarations et Initialisations des variables locales

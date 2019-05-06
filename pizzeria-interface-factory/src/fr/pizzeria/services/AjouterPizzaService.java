@@ -22,7 +22,9 @@ public class AjouterPizzaService extends MenuService {
 		super(daoPizza, scanner);
 	}
 	
-	
+	/**
+	 * Permet d'ajouter une nouvelle pizza au tableau des pizza
+	 */
 	@Override
 	public void executeUC() {
 		// Récupération des données auprès de l'utilisateur

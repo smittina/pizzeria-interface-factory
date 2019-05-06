@@ -5,13 +5,26 @@ import java.util.Scanner;
 import fr.pizzeria.dao.PizzaMemDao;
 import fr.pizzeria.model.Pizza;
 
+/**
+ * Service permettant de modifier une pizza existante
+ * @author Formation
+ *
+ */
 public class ModifierPizzaService extends MenuService {
 
-	
+	/**
+	 * Constructeur
+	 * @param daoPizza Dao Pizza
+	 * @param scanner Scanner permettant à l'utilisateur d'indiquer ses choix
+	 * @param menu Autre menu pouvant intervenir
+	 */
 	public ModifierPizzaService(PizzaMemDao daoPizza, Scanner scanner, MenuService menu) {
 		super(daoPizza, scanner, menu );
 	}
 	
+	/**
+	 * Permet de modifier une pizza existante
+	 */
 	@Override
 	public void executeUC() {
 		String code = "";
